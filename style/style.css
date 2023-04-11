@@ -159,12 +159,8 @@ footer select {
         display: none;
     }
     #container {
-        /* display: flex; */
         align-items: center;
        margin-left: 10px;
-         /* margin-top: 50px; */
-        /* margin: 50px 50px 100px 50px; */
-        /* flex-direction: column; */
     }
     
 }
