@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/edit-profile.css">
+    <!-- <link rel="stylesheet" href="./style/style.css"> -->
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav>
+            <img id="logoimg" src="./images/logo.png" />
+            <ul>
+                <li><img class="icons" src="./images/home.png" alt=""> &nbsp;<a href="./home.html"> Home </a></li>
+                <li><img class="icons" src="./images/search.png" alt="">&nbsp;&nbsp;<a href="#">Search</a></li>
+                <li><img class="icons" src="./images/explore.png" alt="">&nbsp;&nbsp;<a href="#">Explore</a></li>
+                <li><img class="icons" src="./images/reels.png" alt="">&nbsp;&nbsp;<a href="#">Reels</a></li>
+                <li><img class="icons" src="./images/messages.png" alt="">&nbsp;&nbsp;<a href="#">Messages</a></li>
+                <li><img class="icons" src="./images/like.png" alt="">&nbsp;&nbsp;<a href="#">Notifications</a></li>
+                <li><img class="icons" src="./images/create.png" alt="">&nbsp;&nbsp;<a href="#">Create</a></li>
+                <li><img class="icons" src="./images/profile.png" alt="">&nbsp;&nbsp;<a
+                        href="./profile.html"><b>Profile</b></a>
+                </li>
+                <br>
+                <li><img class="icons" src="./images/more.png" alt="">&nbsp;&nbsp;<a href="#">More</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-home">
+        <main id="edit-profile">
+            <div class="edit-profile__container">
+                <header class="edit-profile__header">
+                    <div class="edit-profile__avatar-container">
+                        <img src="images/instadp.jpeg" class="edit-profile__avatar" />
+                    </div>
+                    <h4 class="edit-profile__username">_yashxjain</h4>
+                </header>
+                <form action="" class="edit-profile__form">
+                    <div class="form__row">
+                        <label for="full-name" class="form__label">Name:</label>
+                        <input id="full-name" type="text" class="form__input" />
+                    </div>
+                    <div class="form__row">
+                        <label for="user-name" class="form__label">Username:</label>
+                        <input id="user-name" type="text" class="form__input" />
+                    </div>
+                    <div class="form__row">
+                        <label for="website" class="form__label">Website:</label>
+                        <input id="website" type="url" class="form__input" />
+                    </div>
+                    <div class="form__row">
+                        <label for="bio" class="form__label">Bio:</label>
+                        <textarea id="bio"></textarea>
+                    </div>
+                    <div class="form__row">
+                        <label for="email" class="form__label">Email:</label>
+                        <input id="email" type="email" class="form__input" />
+                    </div>
+                    <div class="form__row">
+                        <label for="phone" class="form__label">Phone Number:</label>
+                        <input id="phone" type="tel" class="form__input" />
+                    </div>
+                    <div class="form__row">
+                        <label for="gender" class="form__label">Gender:</label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="cant">Can't remember</option>
+                        </select>
+                    </div>
+                    <input id="submit-btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <a href="">Meta</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Jobs</a>
+            <a href="">Help</a>
+            <a href="">API</a>
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Top Accounts</a>
+            <a href="">Locations</a>
+            <a href="">Instagram Lite</a>
+            <a href="">Instagram Contact</a>
+            <a href="">Uploading & Non-Users</a>
+            <div class="bottom-footer">
+                <select name="" id="">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Punjabi">Punjabi</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Francais">Francais</option>
+                </select>
+                <span> &copy; 2023 Instagram from Meta</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
