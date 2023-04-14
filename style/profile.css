@@ -223,6 +223,8 @@ body {
     max-width: 100%;
 }
 
+
+
 .profile__photo .profile__photo-overlay {
     position: absolute;
     top: 0;
@@ -240,6 +242,7 @@ body {
 
 .profile__photo:hover .profile__photo-overlay {
     opacity: 1;
+    cursor: pointer;
 }
 
 .profile__photo-overlay .overlay__item {

@@ -129,6 +129,7 @@
     let targetDate = new Date(Date.now() + 6 * 24 * 60 * 60 * 1000 + 23 * 60 * 60 * 1000 + 38 * 60 * 1000 + 45 * 1000);
 
     function updateCountdown() {
+        // e.preventDefault();
         let now = new Date().getTime();
         let distance = targetDate - now;
 

@@ -10,6 +10,7 @@
     /* justify-content: space-between; */
     /* max-width: 936px; */
     width: 100%;
+    margin-top: 20px;
 }
 
 .profile__photos .profile__photo {
@@ -39,6 +40,7 @@
 
 .profile__photo:hover .profile__photo-overlay {
     opacity: 1;
+    cursor: pointer;
 }
 
 .profile__photo-overlay .overlay__item {

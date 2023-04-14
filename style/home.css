@@ -12,7 +12,6 @@ body {
     /* padding-left: 15px; */
 }
 
-
 #logoimg {
     height: 50px;
     /* margin: 0 auto; */
@@ -26,46 +25,11 @@ body {
 
     position: fixed;
     width: 300px;
-    height: 100vh;
+    /* height: 100vh; */
     background: #f8f8f8;
     z-index: 2;
 }
 
-
-
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0px;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-body {
-  background: #f8f8f8;
-  padding-top: 15px;
-  padding-left: 15px;
-}
-:root {
-  --gradient: linear-gradient(to right, #e2336b, #fcac46);
-}
-.sidebar {
-  position: fixed;
-  width: 300px;
-  height: 100vh;
-  background: #f8f8f8;
-  z-index: 2;
-}
-.main-home {
-  position: absolute;
-  width: calc(100% - 300px);
-  top: 0;
-  left: 300px;
-  background: #fff;
-  border-radius: 1rem 0 0 1rem;
-  z-index: 1000;
-} */
 .sidebar nav {
     padding: 45px;
 }
