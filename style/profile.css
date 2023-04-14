@@ -34,11 +34,10 @@ body {
 .main-home {
     position: absolute;
     width: calc(100% - 300px);
-    top: 0;
+    top: 10px;
     left: 300px;
     background: #fff;
     border-radius: 1rem 0 0 1rem;
-    z-index: 1000;
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -89,17 +88,7 @@ body {
     color: black;
 }
 
-.main-home {
-    position: absolute;
-    width: calc(100% - 300px);
-    top: 0;
-    top: 30px;
-    left: 300px;
-    background: #fff;
-    border-radius: 1rem 0 0 1rem;
-    z-index: 1000;
-    /* border: 1px solid red; */
-}
+
 
 #profile {
     display: flex;
@@ -355,11 +344,34 @@ body {
 
 .navs ul li {
     list-style: none;
-    /* display: flex; */
-    /* justify-content: space-around; */
-  
-    /* padding: 0px 30px; */
-    /* border: 1px solid green; */
+
+}
+
+.navs a {
+    position: relative;
+    display: block;
+    transition: .5s;
+}
+
+.navs a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform .5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.navs a:hover {
+    color: #95a5a6;
+}
+
+.navs a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .navs ul li img {
@@ -370,7 +382,7 @@ body {
 .navs a {
     text-decoration: none;
     font-size: 20px;
-    color: black; 
+    color: black;
     padding: 10px 40px 10px 3px;
     margin-top: -5px;
 }

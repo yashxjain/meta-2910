@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/ham.css">
+    <link rel="stylesheet" href="./style/reels.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./style/style.css"> -->
+</head>
+
+<body>
+    <div class="sidebar sidebarGo">
+        <nav>
+            <img id="logoimg" src="./images/logo.png" />
+            <ul>
+                <li><img class="icons" src="./images/home.png" alt=""> &nbsp;<a href="./home.html"> Home </a>
+                </li>
+                <li><img class="icons hamburger" src="./images/search.png" alt="">&nbsp;&nbsp;<a href="#">Search</a>
+                </li>
+                <li><img class="icons" src="./images/explore.png" alt="">&nbsp;&nbsp;<a
+                        href="./explore.html">Explore</a></li>
+                <li><img class="icons" src="./images/reels.png" alt="">&nbsp;&nbsp;<a href="./reels.html"><b>Reels</b>
+                    </a></li>
+                <li><img class="icons" src="./images/messages.png" alt="">&nbsp;&nbsp;<a href="#">Messages</a></li>
+                <li><img class="icons" src="./images/like.png" alt="">&nbsp;&nbsp;<a href="#">Notifications</a></li>
+                <li><img class="icons" src="./images/create.png" alt="">&nbsp;&nbsp;<a id="myButton" href="#">Create</a>
+                </li>
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
+
+                        <h4>Create a new Post</h4>
+
+
+                        <hr>
+                        <img src="./images/media.png" alt="">
+                        <h2>DROP PHOTOS & VIDEOS HERE</h2><br>
+                        <button id="btn">Select from Computer</button>
+                        <button id="closePopup">
+
+                        </button>
+                    </div>
+                </div>
+                <li><img class="icons" src="./images/profile.png" alt="">&nbsp;&nbsp;<a href="profile.html">Profile</a>
+                </li>
+                <br>
+                <li><img class="icons" src="./images/more.png" alt="">&nbsp;&nbsp;<a href="#">More</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-home">
+        <section class="home-section">
+            <div class="home-left">
+                <p> Changing the way you enjoy more </p>
+                <p class="heading"> Opportunities <br> <span class="bold-heading"> Designed </span> for Reel Life </p>
+                <p class="home-description">
+                    Here you can make your own content like short videos to entertain others or you have chance to
+                    showcase your talent
+                    more....
+                </p>
+                <div class="contact">
+                    <a href="#"> Like</a>
+                    <a href="#"> Comment</a>
+                    <a href="#"> Share</a>
+                    <a href="#"> Save</a>
+                </div>
+            </div>
+            <div class="home-right">
+                <img src="./images/reel2.jpg" alt="">
+            </div>
+        </section>
+        <!-- Home Section Ends Here -->
+
+        <!-- Countdown Section Starts from Here -->
+        <section class="countdown">
+            <p> We can't wait to show you what we've got preapred </p>
+            <div class="timer-container">
+                <p> <span class="number " id="days"></span> <br> <span class="days">Days</span> </p>
+                <p>:</p>
+                <p> <span class="number " id="hour"></span> <br><span class="hours">Hours</span> </p>
+                <p>:</p>
+                <p> <span class="number " id="min"></span> <br><span class="minutes"> Minutes </span> </p>
+                <p>:</p>
+                <p> <span class="number " id="sec"></span> <br><span class="seconds"> Seconds </span> </p>
+
+            </div>
+        </section>
+
+        <footer>
+            <a href="">Meta</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Jobs</a>
+            <a href="">Help</a>
+            <a href="">API</a>
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Top Accounts</a>
+            <a href="">Locations</a>
+            <a href="">Instagram Lite</a>
+            <a href="">Instagram Contact</a>
+            <a href="">Uploading & Non-Users</a>
+            <div class="bottom-footer">
+                <select name="" id="">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Punjabi">Punjabi</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Francais">Francais</option>
+                </select>
+                <span> &copy; 2023 Instagram from Meta</span>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    let daysEl = document.getElementById("days");
+    let hourEl = document.getElementById("hour");
+    let minEl = document.getElementById("min");
+    let secEl = document.getElementById("sec");
+
+    // Set the target date for the countdown
+    let targetDate = new Date(Date.now() + 6 * 24 * 60 * 60 * 1000 + 23 * 60 * 60 * 1000 + 38 * 60 * 1000 + 45 * 1000);
+
+    function updateCountdown() {
+        let now = new Date().getTime();
+        let distance = targetDate - now;
+
+        // Calculate the days, hours, minutes, and seconds remaining
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Update the HTML elements with the countdown values
+        daysEl.innerText = days;
+        hourEl.innerText = hours;
+        minEl.innerText = minutes;
+        secEl.innerText = seconds;
+    }
+
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
+
+    // Update the countdown immediately on page load
+    updateCountdown();
+
+
+    myButton.addEventListener("click", function () {
+        myPopup.classList.add("show");
+    });
+    closePopup.addEventListener("click", function () {
+        myPopup.classList.remove("show");
+    });
+    window.addEventListener("click", function (event) {
+        if (event.target == myPopup) {
+            myPopup.classList.remove("show");
+        }
+    });
+</script>
+
+</html>

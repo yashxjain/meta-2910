@@ -125,5 +125,6 @@ footer select {
 }
 
 #submit-btn {
+    cursor: pointer;
     
 }

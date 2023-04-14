@@ -31,15 +31,7 @@ body {
     z-index: 2;
 }
 
-.main-home {
-    position: absolute;
-    width: calc(100% - 300px);
-    top: 0;
-    left: 300px;
-    background: #fff;
-    border-radius: 1rem 0 0 1rem;
-    z-index: 1000;
-}
+
 
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
@@ -95,6 +87,16 @@ body {
     display: flex;
     /* justify-content: center; */
     /* margin-top: 50px; */
+}
+
+.main-home {
+    position: absolute;
+    width: calc(100% - 300px);
+    top: 0;
+    left: 300px;
+    background: #fff;
+    border-radius: 1rem 0 0 1rem;
+    /* z-index: 1000; */
 }
 
 .wrapper {
@@ -313,14 +315,15 @@ body {
     left: 1000px;
     background: #fff;
     border-radius: 1rem 0 0 1rem;
-    z-index: 1000;
+    /* z-index: 1000; */
     /* border: 1px solid red; */
 }
-.right-col{
+
+.right-col {
     padding: 20px;
 }
 
-.profile-card{
+.profile-card {
     width: fit-content;
     display: flex;
     justify-content: center;
@@ -328,7 +331,7 @@ body {
     margin-bottom: 10px;
 }
 
-.profile-card .profile-pic{
+.profile-card .profile-pic {
     flex: 0 0 auto;
     padding: 0;
     background: none;
@@ -337,59 +340,60 @@ body {
     margin-right: 10px;
 }
 
-.profile-card:first-child .profile-pic{
+.profile-card:first-child .profile-pic {
     width: 70px;
     height: 70px;
 }
 
-.profile-card .profile-pic img{
+.profile-card .profile-pic img {
     border: none;
 }
 
-.profile-card .username{
+.profile-card .username {
     font-weight: 500;
     font-size: 14px;
     color: #000;
 }
 
-.sub-text{
+.sub-text {
     color: rgba(0, 0, 0, 0.5);
-    font-size:12px;
+    font-size: 12px;
     font-weight: 500;
     margin-top: 5px;
 }
 
-.action-btn{
+.action-btn {
     opacity: 1;
     font-weight: 700;
     font-size: 12px;
 }
 
-.suggestion-text{
+.suggestion-text {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
     font-weight: 700;
     margin: 20px 0;
 }
 
-@media (max-width: 1100px){
-    .right-col, .search-box{
+@media (max-width: 1100px) {
+
+    .right-col,
+    .search-box {
         display: none;
     }
+
     .nav-wrapper,
-    .wrapper{
+    .wrapper {
         width: 90%;
     }
-    .wrapper{
+
+    .wrapper {
         display: block;
     }
 }
 
-@media (max-width: 500px){
-    .nav-items .icon{
-        margin: 0 5px;
-    }
-    .post-image{
-        height: 300px;
+@media (min-width: 850px) {
+    .icons a {
+        display: none;
     }
 }

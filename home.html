@@ -7,20 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/ham.css">
 </head>
 
 <body>
-    <div class="sidebar">
+    <div class="sidebar sidebarGo">
         <nav>
             <img id="logoimg" src="./images/logo.png" />
             <ul>
-                <li><img class="icons" src="./images/home.png" alt=""> &nbsp;<a href="#"> <b>Home</b> </a></li>
-                <li><img class="icons" src="./images/search.png" alt="">&nbsp;&nbsp;<a href="#">Search</a></li>
-                <li><img class="icons" src="./images/explore.png" alt="">&nbsp;&nbsp;<a href="#">Explore</a></li>
-                <li><img class="icons" src="./images/reels.png" alt="">&nbsp;&nbsp;<a href="#">Reels</a></li>
+                <li><img class="icons" src="./images/home.png" alt=""> &nbsp;<a href="./home.html"> <b>Home</b> </a>
+                </li>
+                <li><img class="icons hamburger" src="./images/search.png" alt="">&nbsp;&nbsp;<a href="#">Search</a>
+                </li>
+                <li><img class="icons" src="./images/explore.png" alt="">&nbsp;&nbsp;<a
+                        href="./explore.html">Explore</a></li>
+                <li><img class="icons" src="./images/reels.png" alt="">&nbsp;&nbsp;<a href="./reels.html">Reels</a></li>
                 <li><img class="icons" src="./images/messages.png" alt="">&nbsp;&nbsp;<a href="#">Messages</a></li>
                 <li><img class="icons" src="./images/like.png" alt="">&nbsp;&nbsp;<a href="#">Notifications</a></li>
-                <li><img class="icons" src="./images/create.png" alt="">&nbsp;&nbsp;<a href="#">Create</a></li>
+                <li><img class="icons" src="./images/create.png" alt="">&nbsp;&nbsp;<a id="myButton" href="#">Create</a>
+                </li>
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
+
+                        <h4>Create a new Post</h4>
+
+
+                        <hr>
+                        <img src="./images/media.png" alt="">
+                        <h2>DROP PHOTOS & VIDEOS HERE</h2><br>
+                        <button id="btn">Select from Computer</button>
+                        <button id="closePopup">
+
+                        </button>
+                    </div>
+                </div>
                 <li><img class="icons" src="./images/profile.png" alt="">&nbsp;&nbsp;<a href="profile.html">Profile</a>
                 </li>
                 <br>
@@ -28,6 +48,7 @@
             </ul>
         </nav>
     </div>
+
     <div class="main-home">
         <section class="main">
             <div class="wrapper">
@@ -81,7 +102,7 @@
         <section class="main">
             <div class="wrapper">
                 <div class="left-col">
-                    <!-- // status wrappers -->
+
 
                     <div class="post">
                         <div class="info">
@@ -272,7 +293,7 @@
     <div class="right-main-home">
         <section class="main">
             <div class="wrapper">
-                <!-- // left col element -->
+
                 <div class="right-col">
                     <div class="profile-card">
                         <div class="profile-pic">
@@ -340,5 +361,18 @@
         </section>
     </div>
 </body>
+<script>
+    myButton.addEventListener("click", function () {
+        myPopup.classList.add("show");
+    });
+    closePopup.addEventListener("click", function () {
+        myPopup.classList.remove("show");
+    });
+    window.addEventListener("click", function (event) {
+        if (event.target == myPopup) {
+            myPopup.classList.remove("show");
+        }
+    });
+</script>
 
 </html>

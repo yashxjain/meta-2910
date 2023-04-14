@@ -1,3 +1,4 @@
+`
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/profile.css">
+    <link rel="stylesheet" href="./style/ham.css">
 </head>
 
 <body>
@@ -17,11 +19,28 @@
             <ul>
                 <li><img class="icons" src="./images/home.png" alt=""> &nbsp;<a href="home.html"> Home</a></li>
                 <li><img class="icons" src="./images/search.png" alt="">&nbsp;&nbsp;<a href="#">Search</a></li>
-                <li><img class="icons" src="./images/explore.png" alt="">&nbsp;&nbsp;<a href="#">Explore</a></li>
-                <li><img class="icons" src="./images/reels.png" alt="">&nbsp;&nbsp;<a href="#">Reels</a></li>
+                <li><img class="icons" src="./images/explore.png" alt="">&nbsp;&nbsp;<a
+                        href="./explore.html">Explore</a></li>
+                <li><img class="icons" src="./images/reels.png" alt="">&nbsp;&nbsp;<a href="./reels.html">Reels</a></li>
                 <li><img class="icons" src="./images/messages.png" alt="">&nbsp;&nbsp;<a href="#">Messages</a></li>
                 <li><img class="icons" src="./images/like.png" alt="">&nbsp;&nbsp;<a href="#">Notifications</a></li>
-                <li><img class="icons" src="./images/create.png" alt="">&nbsp;&nbsp;<a href="#">Create</a></li>
+                <li><img class="icons" src="./images/create.png" alt="">&nbsp;&nbsp;<a id="myButton" href="#">Create</a>
+                </li>
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
+
+                        <h4>Create a new Post</h4>
+
+
+                        <hr>
+                        <img src="./images/media.png" alt="">
+                        <h2>DROP PHOTOS & VIDEOS HERE</h2><br>
+                        <button id="btn">Select from Computer</button>
+                        <button id="closePopup">
+
+                        </button>
+                    </div>
+                </div>
                 <li><img class="icons" src="./images/profile.png" alt="">&nbsp;&nbsp;<a href="#"> <b> Profile</b></a>
                 </li>
                 <br>
@@ -30,7 +49,6 @@
         </nav>
     </div>
     <div class="main-home">
-
         <main id="profile">
             <header class="profile__header">
                 <div class="profile__column">
@@ -138,7 +156,7 @@
             <section class="navs">
                 <ul>
                     <li><img src="./images/post.png" alt=""></li>
-                    <a href="">Post</a>
+                    <a href=""><b>Post</b> </a>
                     <li><img src="./images/reels.png" alt=""></li>
                     <a href="">Reels</a>
                     <li><img src="./images/save.png" alt=""></li>
@@ -269,5 +287,18 @@
         </main>
     </div>
 </body>
+<script>
+    myButton.addEventListener("click", function () {
+        myPopup.classList.add("show");
+    });
+    closePopup.addEventListener("click", function () {
+        myPopup.classList.remove("show");
+    });
+    window.addEventListener("click", function (event) {
+        if (event.target == myPopup) {
+            myPopup.classList.remove("show");
+        }
+    });
+</script>
 
 </html>

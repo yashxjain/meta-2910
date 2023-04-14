@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/home.css">
+    <!-- <link rel="stylesheet" href="./style/profile.css"> -->
+    <link rel="stylesheet" href="./style/explore.css">
+    <link rel="stylesheet" href="./style/ham.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav>
+            <img id="logoimg" src="./images/logo.png" />
+            <ul>
+                <li><img class="icons" src="./images/home.png" alt=""> &nbsp;<a href="./home.html"> Home </a>
+                </li>
+                <li><img class="icons" src="./images/search.png" alt="">&nbsp;&nbsp;<a href="#">Search</a></li>
+                <li><img class="icons" src="./images/explore.png" alt="">&nbsp;&nbsp;<a
+                        href="./explore.html"><b>Explore</b> </a></li>
+                <li><img class="icons" src="./images/reels.png" alt="">&nbsp;&nbsp;<a href="./reels.html">Reels</a></li>
+                <li><img class="icons" src="./images/messages.png" alt="">&nbsp;&nbsp;<a href="#">Messages</a></li>
+                <li><img class="icons" src="./images/like.png" alt="">&nbsp;&nbsp;<a href="#">Notifications</a></li>
+                <li><img class="icons" src="./images/create.png" alt="">&nbsp;&nbsp;<a id="myButton" href="#">Create</a>
+                </li>
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
+
+                        <h4>Create a new Post</h4>
+
+
+                        <hr>
+                        <img src="./images/media.png" alt="">
+                        <h2>DROP PHOTOS & VIDEOS HERE</h2><br>
+                        <button id="btn">Select from Computer</button>
+                        <button id="closePopup">
+
+                        </button>
+                    </div>
+                </div>
+                <li><img class="icons" src="./images/profile.png" alt="">&nbsp;&nbsp;<a href="profile.html">Profile</a>
+                </li>
+                <br>
+                <li><img class="icons" src="./images/more.png" alt="">&nbsp;&nbsp;<a href="#">More</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-home">
+
+        <section class="profile__photos explore_items">
+            <div class="profile__photo">
+                <img src="images/insta2.jpeg" />
+                <div class="profile__photo-overlay">
+                    <span class="overlay__item">
+                        <i class="fa fa-heart"></i>
+                        48
+                    </span>
+                    <span class="overlay__item">
+                        <i class="fa fa-comment"></i>
+                        4
+                    </span>
+                </div>
+            </div>
+            <div class="profile__photo">
+                <img src="images/insta3.jpeg" />
+                <div class="profile__photo-overlay">
+                    <span class="overlay__item">
+                        <i class="fa fa-heart"></i>
+                        48
+                    </span>
+                    <span class="overlay__item">
+                        <i class="fa fa-comment"></i>
+                        4
+                    </span>
+                </div>
+            </div>
+            <div class="profile__photo">
+                <img src="images/insta4.jpeg" />
+                <div class="profile__photo-overlay">
+                    <span class="overlay__item">
+                        <i class="fa fa-heart"></i>
+                        48
+                    </span>
+                    <span class="overlay__item">
+                        <i class="fa fa-comment"></i>
+                        4
+                    </span>
+                </div>
+            </div>
+            <div class="profile__photo">
+                <img src="images/insta5.jpeg" />
+                <div class="profile__photo-overlay">
+                    <span class="overlay__item">
+                        <i class="fa fa-heart"></i>
+                        48
+                    </span>
+                    <span class="overlay__item">
+                        <i class="fa fa-comment"></i>
+                        4
+                    </span>
+                </div>
+            </div>
+            <div class="profile__photo">
+                <img src="images/insta6.jpeg" />
+                <div class="profile__photo-overlay">
+                    <span class="overlay__item">
+                        <i class="fa fa-heart"></i>
+                        48
+                    </span>
+                    <span class="overlay__item">
+                        <i class="fa fa-comment"></i>
+                        4
+                    </span>
+                </div>
+            </div>
+            <div class="profile__photo">
+                <img src="images/insta7.jpeg" />
+                <div class="profile__photo-overlay">
+                    <span class="overlay__item">
+                        <i class="fa fa-heart"></i>
+                        48
+                    </span>
+                    <span class="overlay__item">
+                        <i class="fa fa-comment"></i>
+                        4
+                    </span>
+                </div>
+            </div>
+            <div class="profile__photo">
+                <img src="images/insta8.jpeg" />
+                <div class="profile__photo-overlay">
+                    <span class="overlay__item">
+                        <i class="fa fa-heart"></i>
+                        48
+                    </span>
+                    <span class="overlay__item">
+                        <i class="fa fa-comment"></i>
+                        4
+                    </span>
+                </div>
+            </div>
+            <div class="profile__photo">
+                <img src="images/insta9.jpeg" />
+                <div class="profile__photo-overlay">
+                    <span class="overlay__item">
+                        <i class="fa fa-heart"></i>
+                        48
+                    </span>
+                    <span class="overlay__item">
+                        <i class="fa fa-comment"></i>
+                        4
+                    </span>
+                </div>
+            </div>
+            <div class="profile__photo">
+                <img src="images/insta10.jpeg" />
+                <div class="profile__photo-overlay">
+                    <span class="overlay__item">
+                        <i class="fa fa-heart"></i>
+                        48
+                    </span>
+                    <span class="overlay__item">
+                        <i class="fa fa-comment"></i>
+                        4
+                    </span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+<script>
+    myButton.addEventListener("click", function () {
+        myPopup.classList.add("show");
+    });
+    closePopup.addEventListener("click", function () {
+        myPopup.classList.remove("show");
+    });
+    window.addEventListener("click", function (event) {
+        if (event.target == myPopup) {
+            myPopup.classList.remove("show");
+        }
+    });
+</script>
+
+</html>
