@@ -6,85 +6,373 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/ham.css">
 </head>
 
 <body>
-    <div id="up">
-        <img id="imgup" src="./images/phoneImage.png" alt="">
-        <!-- <img src="./images/screenshot1.png" alt=""> -->
-        <div id="container">
+    <div class="sidebar sidebarGo">
+        <nav>
+            <img id="logoimg" src="./images/logo.png" />
+            <ul>
+                <li><img class="icons" src="./images/home.png" alt=""> &nbsp;<a href="./home.html"> <b>Home</b> </a>
+                </li>
+                <li><img class="icons hamburger" src="./images/search.png" alt="">&nbsp;&nbsp;<a href="#">Search</a>
+                </li>
+                <li><img class="icons" src="./images/explore.png" alt="">&nbsp;&nbsp;<a
+                        href="./explore.html">Explore</a></li>
+                <li><img class="icons" src="./images/reels.png" alt="">&nbsp;&nbsp;<a href="./reels.html">Reels</a></li>
+                <li><img class="icons" src="./images/messages.png" alt="">&nbsp;&nbsp;<a href="#">Messages</a></li>
+                <li><img class="icons" src="./images/like.png" alt="">&nbsp;&nbsp;<a href="#">Notifications</a></li>
+                <li><img class="icons" src="./images/create.png" alt="">&nbsp;&nbsp;<a id="myButton" href="#">Create</a>
+                </li>
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
 
-            <section>
-                <div class="main-top">
-                    <div class="logo">
-                        <img src="./images/logo.png" />
-                    </div>
-                    <div>
-                        <input type="text" placeholder="username" class="username" />
-                        <div>
-                            <input type="password" placeholder="password" class="password" />
-                        </div>
-                        <input type="button" value="Log in" class="login-btn" />
-                    </div>
+                        <h4>Create a new Post</h4>
 
-                    <span class="or"> OR </span>
 
-                    <div class="main-bottom">
-                        <a href="" class="logInFB"><i class="fa-brands fa-facebook-f"></i> Log in with Facebook </a><br>
-                        <a href="" class="forget"> Forgot password </a>
-                    </div>
+                        <hr>
+                        <img src="./images/media.png" alt="">
+                        <h2>DROP PHOTOS & VIDEOS HERE</h2><br>
+                        <button id="btn">Select from Computer</button>
+                        <button id="closePopup">
 
-                </div>
-                <div class="bottom">
-                    <div class="signUp">
-                        Don't have an account? <a href="./signup.html">Sign up</a>
-                    </div>
-                </div>
-                <div class="app-section">
-                    <span> Get the app </span>
-                    <div class="images">
-                        <a href="https://play.google.com/store/search?q=instagram&c=apps"><img
-                                src="./images/googlePlay.png" alt="googlePlay Image"></a>
-                        <a href="https://apps.microsoft.com/store/detail/instagram/9NBLGGH5L9XT"><img
-                                src="./images/microsoft.png" alt="Microsoft Image"></a>
+                        </button>
                     </div>
                 </div>
-            </section>
-
-            <!-- Footer Section Starts from Here -->
-
-        </div>
+                <li><img class="icons" src="./images/profile.png" alt="">&nbsp;&nbsp;<a href="profile.html">Profile</a>
+                </li>
+                <br>
+                <li><img class="icons" src="./images/more.png" alt="">&nbsp;&nbsp;<a href="#">More</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <footer>
-        <a href="">Meta</a>
-        <a href="">About</a>
-        <a href="">Blog</a>
-        <a href="">Jobs</a>
-        <a href="">Help</a>
-        <a href="">API</a>
-        <a href="">Privacy</a>
-        <a href="">Terms</a>
-        <a href="">Top Accounts</a>
-        <a href="">Locations</a>
-        <a href="">Instagram Lite</a>
-        <a href="">Instagram Contact</a>
-        <a href="">Uploading & Non-Users</a>
-        <div class="bottom-footer">
-            <select name="" id="">
-                <option value="English">English</option>
-                <option value="Hindi">Hindi</option>
-                <option value="Punjabi">Punjabi</option>
-                <option value="Urdu">Urdu</option>
-                <option value="Francais">Francais</option>
-            </select>
-            <span> &copy; 2023 Instagram from Meta</span>
-        </div>
-    </footer>
+    <div class="main-home">
+        <section class="main">
+            <div class="wrapper">
+                <div class="left-col">
+                    <div class="status-wrapper">
+                        <div class="status-card">
+                            <div class="profile-pic"><img
+                                    src="https://imgs.search.brave.com/10x-9MYQ3UT8UE_O0OhPyYdEs6hFJ2AFNmg-67Gup0k/rs:fit:412:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC54/UHhsZTJTSjlmVkZR/Yll6V1lXcHBBSGFJ/aCZwaWQ9QXBp"
+                                    alt=""></div>
+                            <p class="username">kyliejenner</p>
+                        </div>
+                        <div class="status-card">
+                            <div class="profile-pic"><img
+                                    src="https://imgs.search.brave.com/W1_DUbua_zzubi-dP-hiGaJ7suKs9LF5B0qQZjL7g8k/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/LmV4cGxpY2l0LmJp/bmcubmV0L3RoP2lk/PU9JUC4tTVJ6YnEy/QmxMRFFDWjZ6MHZS/c0tBSGFIYSZwaWQ9/QXBp"
+                                    alt=""></div>
+                            <p class="username">virat.kholi</p>
+                        </div>
+                        <div class="status-card">
+                            <div class="profile-pic"><img
+                                    src="https://imgs.search.brave.com/1muf_ZxDqbG23QAFI9hE28PN6tsbXpHfOeyy_aBdIc8/rs:fit:379:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5R/MUpJQVdIcVBmbkN1/dzMxOXBwbzJ3SGFK/USZwaWQ9QXBp"
+                                    alt=""></div>
+                            <p class="username">cristiano</p>
+                        </div>
+                        <div class="status-card">
+                            <div class="profile-pic"><img
+                                    src="https://imgs.search.brave.com/duKR7AWw_UzBZ803TA9iD-wkPMqec5XPsanO8fdN5eY/rs:fit:492:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5m/aEtCcUVrSkdEc0I3/QTR4VVVfTGdBSGFI/SSZwaWQ9QXBp"
+                                    alt=""></div>
+                            <p class="username">jacquelinef143</p>
+                        </div>
+                        <div class="status-card">
+                            <div class="profile-pic"><img
+                                    src="https://imgs.search.brave.com/K7c_uwJRXGqJqfzIuiWPDkQKmZdF_z2vkGCCHpIjrZg/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5X/SkdHOGF1N0Yydk92/b0Fza3IzeUNnSGFF/OCZwaWQ9QXBp"
+                                    alt=""></div>
+                            <p class="username">emmawwatson</p>
+                        </div>
+                        <div class="status-card">
+                            <div class="profile-pic"><img
+                                    src="https://imgs.search.brave.com/HERfYOcEakASpgiOQM7sdWvOyZFIoyjhADvBkv8AoWQ/rs:fit:316:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Q/N0ZRV2E5NFlhT3Rn/VjlHLVpMNWNRSGFM/SCZwaWQ9QXBp"
+                                    alt=""></div>
+                            <p class="username">robertdowneyjr</p>
+                        </div>
+                        <div class="status-card">
+                            <div class="profile-pic"><img
+                                    src="https://imgs.search.brave.com/10x-9MYQ3UT8UE_O0OhPyYdEs6hFJ2AFNmg-67Gup0k/rs:fit:412:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC54/UHhsZTJTSjlmVkZR/Yll6V1lXcHBBSGFJ/aCZwaWQ9QXBp"
+                                    alt=""></div>
+                            <p class="username">kyliejenner</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="main">
+            <div class="wrapper">
+                <div class="left-col">
+
+
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile-pic"><img
+                                        src="https://imgs.search.brave.com/10x-9MYQ3UT8UE_O0OhPyYdEs6hFJ2AFNmg-67Gup0k/rs:fit:412:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC54/UHhsZTJTSjlmVkZR/Yll6V1lXcHBBSGFJ/aCZwaWQ9QXBp"
+                                        alt=""></div>
+                                <p class="username">kyliejenner</p>
+                                <img class="more2" src="./images/more2.png" class="options" alt="">
+                            </div>
+
+                        </div>
+                        <img src="./images/kyle.jpg" class="post-image" alt="">
+                        <div class="post-content">
+                            <div class="reaction-wrapper">
+                                <img src="images/like.png" class="icon" alt="">
+                                <img src="images/comments.png" class="icon" alt="">
+                                <img src="images/messages.png" class="icon" alt="">
+                                <img src="images/save.png" class="save icon" alt="">
+                            </div>
+                            <p class="likes">4.7 M likes</p>
+                            <p class="description"><span>kyliejenner </span> Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut
+                                provident
+                                eum quo natus molestias?</p>
+                            <p class="post-time">2 minutes ago</p>
+                        </div>
+                        <div class="comment-wrapper">
+                            <img src="images/smile.png" class="icon" alt="">
+                            <input type="text" class="comment-box" placeholder="Add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile-pic"><img src="images/profile.png" alt=""></div>
+                                <p class="username">kyliejenner</p>
+                                <img class="more2" src="./images/more2.png" class="options" alt="">
+                            </div>
+
+                        </div>
+                        <img src="./images/kyle.jpg" class="post-image" alt="">
+                        <div class="post-content">
+                            <div class="reaction-wrapper">
+                                <img src="images/like.png" class="icon" alt="">
+                                <img src="images/comments.png" class="icon" alt="">
+                                <img src="images/messages.png" class="icon" alt="">
+                                <img src="images/save.png" class="save icon" alt="">
+                            </div>
+                            <p class="likes">4.7 M likes</p>
+                            <p class="description"><span>kyliejenner </span> Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut
+                                provident
+                                eum quo natus molestias?</p>
+                            <p class="post-time">2 minutes ago</p>
+                        </div>
+                        <div class="comment-wrapper">
+                            <img src="images/smile.png" class="icon" alt="">
+                            <input type="text" class="comment-box" placeholder="Add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile-pic"><img src="images/profile.png" alt=""></div>
+                                <p class="username">kyliejenner</p>
+                                <img class="more2" src="./images/more2.png" class="options" alt="">
+                            </div>
+
+                        </div>
+                        <img src="./images/kyle.jpg" class="post-image" alt="">
+                        <div class="post-content">
+                            <div class="reaction-wrapper">
+                                <img src="images/like.png" class="icon" alt="">
+                                <img src="images/comments.png" class="icon" alt="">
+                                <img src="images/messages.png" class="icon" alt="">
+                                <img src="images/save.png" class="save icon" alt="">
+                            </div>
+                            <p class="likes">4.7 M likes</p>
+                            <p class="description"><span>kyliejenner </span> Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut
+                                provident
+                                eum quo natus molestias?</p>
+                            <p class="post-time">2 minutes ago</p>
+                        </div>
+                        <div class="comment-wrapper">
+                            <img src="images/smile.png" class="icon" alt="">
+                            <input type="text" class="comment-box" placeholder="Add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile-pic"><img src="images/profile.png" alt=""></div>
+                                <p class="username">kyliejenner</p>
+                                <img class="more2" src="./images/more2.png" class="options" alt="">
+                            </div>
+
+                        </div>
+                        <img src="./images/kyle.jpg" class="post-image" alt="">
+                        <div class="post-content">
+                            <div class="reaction-wrapper">
+                                <img src="images/like.png" class="icon" alt="">
+                                <img src="images/comments.png" class="icon" alt="">
+                                <img src="images/messages.png" class="icon" alt="">
+                                <img src="images/save.png" class="save icon" alt="">
+                            </div>
+                            <p class="likes">4.7 M likes</p>
+                            <p class="description"><span>kyliejenner </span> Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut
+                                provident
+                                eum quo natus molestias?</p>
+                            <p class="post-time">2 minutes ago</p>
+                        </div>
+                        <div class="comment-wrapper">
+                            <img src="images/smile.png" class="icon" alt="">
+                            <input type="text" class="comment-box" placeholder="Add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile-pic"><img src="images/profile.png" alt=""></div>
+                                <p class="username">kyliejenner</p>
+                                <img class="more2" src="./images/more2.png" class="options" alt="">
+                            </div>
+
+                        </div>
+                        <img src="./images/kyle.jpg" class="post-image" alt="">
+                        <div class="post-content">
+                            <div class="reaction-wrapper">
+                                <img src="images/like.png" class="icon" alt="">
+                                <img src="images/comments.png" class="icon" alt="">
+                                <img src="images/messages.png" class="icon" alt="">
+                                <img src="images/save.png" class="save icon" alt="">
+                            </div>
+                            <p class="likes">4.7 M likes</p>
+                            <p class="description"><span>kyliejenner </span> Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut
+                                provident
+                                eum quo natus molestias?</p>
+                            <p class="post-time">2 minutes ago</p>
+                        </div>
+                        <div class="comment-wrapper">
+                            <img src="images/smile.png" class="icon" alt="">
+                            <input type="text" class="comment-box" placeholder="Add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile-pic"><img src="images/profile.png" alt=""></div>
+                                <p class="username">kyliejenner</p>
+                                <img class="more2" src="./images/more2.png" class="options" alt="">
+                            </div>
+
+                        </div>
+                        <img src="./images/kyle.jpg" class="post-image" alt="">
+                        <div class="post-content">
+                            <div class="reaction-wrapper">
+                                <img src="images/like.png" class="icon" alt="">
+                                <img src="images/comments.png" class="icon" alt="">
+                                <img src="images/messages.png" class="icon" alt="">
+                                <img src="images/save.png" class="save icon" alt="">
+                            </div>
+                            <p class="likes">4.7 M likes</p>
+                            <p class="description"><span>kyliejenner </span> Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut
+                                provident
+                                eum quo natus molestias?</p>
+                            <p class="post-time">2 minutes ago</p>
+                        </div>
+                        <div class="comment-wrapper">
+                            <img src="images/smile.png" class="icon" alt="">
+                            <input type="text" class="comment-box" placeholder="Add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="right-main-home">
+        <section class="main">
+            <div class="wrapper">
+
+                <div class="right-col">
+                    <div class="profile-card">
+                        <div class="profile-pic">
+                            <img src="images/profile.png" alt="">
+                        </div>
+                        <div>
+                            <p class="username">_yashxjain</p>
+                            <p class="sub-text">Yash Jain</p>
+                        </div>
+                        <button class="action-btn">Switch</button>
+                    </div>
+                    <p class="suggestion-text">Suggestions for you</p>
+                    <div class="profile-card">
+                        <div class="profile-pic">
+                            <img src="./images/profile.png" alt="">
+                        </div>
+                        <div>
+                            <p class="username">rvcjinsta</p>
+                            <p class="sub-text">Followed by instabollywood</p>
+                        </div>
+                        <button class="action-btn">Follow</button>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-pic">
+                            <img src="./images/profile.png" alt="">
+                        </div>
+                        <div>
+                            <p class="username">rvcjinsta</p>
+                            <p class="sub-text">Followed by instabollywood</p>
+                        </div>
+                        <button class="action-btn">Follow</button>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-pic">
+                            <img src="./images/profile.png" alt="">
+                        </div>
+                        <div>
+                            <p class="username">rvcjinsta</p>
+                            <p class="sub-text">Followed by instabollywood</p>
+                        </div>
+                        <button class="action-btn">Follow</button>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-pic">
+                            <img src="./images/profile.png" alt="">
+                        </div>
+                        <div>
+                            <p class="username">rvcjinsta</p>
+                            <p class="sub-text">Followed by instabollywood</p>
+                        </div>
+                        <button class="action-btn">Follow</button>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-pic">
+                            <img src="./images/profile.png" alt="">
+                        </div>
+                        <div>
+                            <p class="username">rvcjinsta</p>
+                            <p class="sub-text">Followed by instabollywood</p>
+                        </div>
+                        <button class="action-btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+<script>
+    myButton.addEventListener("click", function () {
+        myPopup.classList.add("show");
+    });
+    closePopup.addEventListener("click", function () {
+        myPopup.classList.remove("show");
+    });
+    window.addEventListener("click", function (event) {
+        if (event.target == myPopup) {
+            myPopup.classList.remove("show");
+        }
+    });
+</script>
 
 </html>

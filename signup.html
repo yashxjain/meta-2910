@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Instagram Login Form </title>
+    <title> Instagram SignUp Form </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,12 +23,12 @@
                 </div>
                 <input type="button" value="Log in with Facebook" class="login-btn" />
                 <span class="or"> OR </span>
-                <div>
-                    <input type="text" placeholder="Mobile no." class="username" />
-                    <input type="text" placeholder="Fullname" class="username" />
-                    <input type="text" placeholder="username" class="username" />
+                <form action="">
+                    <input type="text" placeholder="Mobile no." class="username" id="mobile" />
+                    <input type="text" placeholder="Fullname" class="username" id="name" />
+                    <input type="text" placeholder="username" class="username" id="email" />
                     <div>
-                        <input type="password" placeholder="password" class="password" />
+                        <input type="password" placeholder="password" class="password" id="password" />
                     </div>
                     <p>
                         People who use our service may have uploaded your contact information to Instagram. <a
@@ -36,8 +36,8 @@
                     </p><br>
                     <p>
                         By signing up, you agree to our Terms , Privacy Policy and Cookies Policy .</p><br>
-                    <input type="button" value="Log in" class="login-btn" />
-                </div>
+                    <input type="button" value="SignUp" class="login-btn" />
+                </form>
 
 
             </div>
@@ -86,3 +86,33 @@
 </body>
 
 </html>
+
+<script>
+    let name = document.getElementById("name");
+    let phone = document.getElementById("mobile")
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    let personData = [];
+    document.getElementsByClassName("login-btn").addEventListener("click", (e) => {
+        e.preventDefault();
+        let obj = {
+            Name: name.value,
+            Email: email.value,
+            Password: password.value,
+            MobileNo: phone.value
+        }
+        personData.push(obj);
+        localStorage.setItem("account-data", JSON.stringify(personData));
+        Swal.fire({
+            position: 'top',
+            icon: 'success',
+            title: 'Signup Successfully',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        setTimeout(() => {
+            window.location.href = "home.html"
+        }, 1000)
+    })
+
+</script>
